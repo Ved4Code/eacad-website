@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Serif ;
+  padding: 10px;
+  background:#061b61;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 1px;
+  text-align: center;
+  /* background: white;*/
+  background-image: /*url('https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-education-training-course-purple-background-image_128461.jpg')*/linear-gradient(180deg, #663399,violet);
+  /*background-color: #663399;*/
+}
+
+.header h1 {
+  font-size: 50px;
+}
+.logo_head img{
+  height: 60px;
+  width: 60px;
+}
+
+/* Style the top navigation bar */
+
+.topnav {
+  overflow: hidden;
+  background: rgb(223,168,224,0.4); 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #000000;
+  font-family: sans-serif;
+  position: -webkit-sticky; /* Safari */
+  column-gap: 10px;
+  position: sticky;
+
+}
+
+/* Style the topnav links */
+
+.topnav a {
+  float: left;
+  display: block;
+  color:#000000;/*#e9f1f2;*/
+  text-align: center;
+  padding: 14px 16px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin-right: 15px;
+} 
+/* Change color on hover */
+
+.topnav a:hover {
+  background-color: #6897d9;
+  color: black;
+} 
+.topnav input[type=text] {
+  width: 15%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 27px;
+  font-size: 16px;
+  background-color: #a3c3f0;
+  /*background-image: url('https://image.pngaaa.com/560/25560-middle.png');*/
+  background-position: 10px 30px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  background-image : url('img/searchicon.png');
+}
+.background .transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #061b61;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.jee_logo img{
+  height: 100px;
+  width: 150px;
+}
+.logo img{
+      height: 250px;
+      width: 1080px;
+      opacity: 0.6;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  background-image: url('https://image.shutterstock.com/image-illustration/abstract-purple-background-paper-black-260nw-174576203.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*shape-margin: 100px;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer{
+  padding: 20px;
+  /*background: #ddd;*/
+  background-image: linear-gradient(360deg, #663399,violet);
+  margin-top: 20px;
+}
+/*.bottomnav {
+  background-color: #333;
+}
+.bottomnav a {
+  /*float: left;
+  text-decoration: none;
+  background: #333;
+  color: #ffffff;
+}
+*/
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+   float: none;
+    width: 100%;
+  }
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
